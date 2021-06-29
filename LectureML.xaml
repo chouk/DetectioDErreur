@@ -1,0 +1,222 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="LectureML" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="795,2158" sap2010:WorkflowViewState.IdRef="LectureML_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:p1="http://schemas.uipath.com/workflow/activities/intelligentocr/classification" xmlns:p2="http://schemas.uipath.com/workflow/activities/document-processing-contracts/classification" xmlns:p3="http://schemas.uipath.com/workflow/activities/document-processing-contracts/dom" xmlns:p4="http://schemas.uipath.com/workflow/activities/intelligentocr/extraction" xmlns:p5="http://schemas.uipath.com/workflow/activities/document-processing-contracts/extraction" xmlns:p6="http://schemas.uipath.com/workflow/activities/document-processing-contracts/results" xmlns:p7="http://schemas.uipath.com/workflow/activities/document-processing-contracts/taxonomy" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data" xmlns:uoa="clr-namespace:UiPath.OmniPage.Activities;assembly=UiPath.OmniPage.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="96">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Taxonomy</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.TaxonomyManagement</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Dom</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.Digitization</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Results</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.DocumentClassification</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Classification</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Training</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.Training</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.DataExtraction</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.DataExtraction</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.ValidationStation</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.PDF.Activities.PDF</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.Abbyy.Core.FlexiCapture</x:String>
+      <x:String>UiPath.Abbyy.Core.FlexiCapture.Enums</x:String>
+      <x:String>UiPath.Abbyy.Core.FlexiCapture.ValidationStationAdapters</x:String>
+      <x:String>UiPath.OmniPage.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="42">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentProcessing.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Abbyy.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Abbyy.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OmniPage.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="LectureML" sap:VirtualizedContainerService.HintSize="520,1993" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="documentPath" />
+      <Variable x:TypeArguments="p7:DocumentTaxonomy" Name="taxanomie_output" />
+      <Variable x:TypeArguments="x:String" Name="documentTXT" />
+      <Variable x:TypeArguments="p3:Document" Name="DOM" />
+      <Variable x:TypeArguments="p6:ClassificationResult[]" Name="classifications_results" />
+      <Variable x:TypeArguments="p6:ExtractionResult" Name="ExtractedResults" />
+      <Variable x:TypeArguments="p6:ExtractionResult" Name="ValidatedResults" />
+      <Variable x:TypeArguments="sd1:DataSet" Name="dataSet" />
+      <Variable x:TypeArguments="x:String" Name="PDFPath" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="478,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[documentPath]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">Documents\301-MAPL.pdf</InArgument>
+      </Assign.Value>
+    </Assign>
+    <p:LoadTaxonomy DisplayName="Load Taxonomy" sap:VirtualizedContainerService.HintSize="478,67" sap2010:WorkflowViewState.IdRef="LoadTaxonomy_1" Taxonomy="[taxanomie_output]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </p:LoadTaxonomy>
+    <p:DigitizeDocument DegreeOfParallelism="1" DisplayName="Digitize Document" DocumentObjectModel="[DOM]" DocumentPath="[documentPath]" DocumentText="[documentTXT]" ForceApplyOCR="False" sap:VirtualizedContainerService.HintSize="478,293" sap2010:WorkflowViewState.IdRef="DigitizeDocument_2">
+      <p:DigitizeDocument.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+          <uoa:OmniPageOCR Output="{x:Null}" Scale="{x:Null}" Text="{x:Null}" BundleType="Basic" ComputeSkewAngle="False" DisplayName="OmniPage OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="312,22" sap2010:WorkflowViewState.IdRef="OmniPageOCR_1" Image="[Image]" Language="eng" Profile="Legacy" />
+        </ActivityFunc>
+      </p:DigitizeDocument.OCREngine>
+    </p:DigitizeDocument>
+    <p1:ClassifyDocumentScope ClassificationResults="[classifications_results]" DisplayName="Classify Document Scope" DocumentObjectModel="[DOM]" DocumentPath="[documentPath]" DocumentText="[documentTXT]" sap:VirtualizedContainerService.HintSize="478,434" sap2010:WorkflowViewState.IdRef="ClassifyDocumentScope_1" Taxonomy="[taxanomie_output]" TaxonomyConfiguration="{}{&quot;TaxonomyMappings&quot;:{&quot;UIf27643eb2e594fb0b8686d1883716702&quot;:{&quot;DocumentTypeMappings&quot;:{&quot;FormatsPDF.T4.T4&quot;:{&quot;OriginalDocumentTypeId&quot;:&quot;FormatsPDF.T4.T4&quot;,&quot;ClassifierDocumentTypeId&quot;:null,&quot;IsDocumentTypeIdMapped&quot;:true},&quot;FormatsPDF.ADC.Avisdecotisation&quot;:{&quot;OriginalDocumentTypeId&quot;:&quot;FormatsPDF.ADC.Avisdecotisation&quot;,&quot;ClassifierDocumentTypeId&quot;:null,&quot;IsDocumentTypeIdMapped&quot;:true}}}},&quot;ClassifierMinimumConfidence&quot;:{&quot;UIf27643eb2e594fb0b8686d1883716702&quot;:&quot;50&quot;}}">
+      <p1:ClassifyDocumentScope.Classifiers>
+        <p1:KeywordBasedClassifier HumanValidatedData="{x:Null}" LearningData="{x:Null}" DisplayName="Keyword Based Classifier" sap:VirtualizedContainerService.HintSize="234,113" sap2010:WorkflowViewState.IdRef="KeywordBasedClassifier_1" LearningFilePath="Documents\classifier.js" PersistenceId="UIf27643eb2e594fb0b8686d1883716702">
+          <p1:KeywordBasedClassifier.ClassifierResult>
+            <OutArgument x:TypeArguments="p2:ClassifierResult">
+              <DelegateArgumentReference x:TypeArguments="p2:ClassifierResult">
+                <DelegateOutArgument x:TypeArguments="p2:ClassifierResult" Name="ClassificationResult" />
+              </DelegateArgumentReference>
+            </OutArgument>
+          </p1:KeywordBasedClassifier.ClassifierResult>
+          <p1:KeywordBasedClassifier.DocumentObjectModel>
+            <InArgument x:TypeArguments="p3:Document">
+              <DelegateArgumentValue x:TypeArguments="p3:Document">
+                <DelegateInArgument x:TypeArguments="p3:Document" Name="DocumentObjectModel" />
+              </DelegateArgumentValue>
+            </InArgument>
+          </p1:KeywordBasedClassifier.DocumentObjectModel>
+          <p1:KeywordBasedClassifier.DocumentPath>
+            <InArgument x:TypeArguments="x:String">
+              <DelegateArgumentValue x:TypeArguments="x:String">
+                <DelegateInArgument x:TypeArguments="x:String" Name="DocumentPath" />
+              </DelegateArgumentValue>
+            </InArgument>
+          </p1:KeywordBasedClassifier.DocumentPath>
+          <p1:KeywordBasedClassifier.DocumentText>
+            <InArgument x:TypeArguments="x:String">
+              <DelegateArgumentValue x:TypeArguments="x:String">
+                <DelegateInArgument x:TypeArguments="x:String" Name="DocumentText" />
+              </DelegateArgumentValue>
+            </InArgument>
+          </p1:KeywordBasedClassifier.DocumentText>
+          <p1:KeywordBasedClassifier.DocumentTypes>
+            <InArgument x:TypeArguments="p2:ClassifierDocumentType[]">
+              <DelegateArgumentValue x:TypeArguments="p2:ClassifierDocumentType[]">
+                <DelegateInArgument x:TypeArguments="p2:ClassifierDocumentType[]" Name="DocumentTypes" />
+              </DelegateArgumentValue>
+            </InArgument>
+          </p1:KeywordBasedClassifier.DocumentTypes>
+        </p1:KeywordBasedClassifier>
+      </p1:ClassifyDocumentScope.Classifiers>
+    </p1:ClassifyDocumentScope>
+    <p4:DataExtractionScope DocumentTypeId="{x:Null}" ClassificationResult="[classifications_results(0)]" DisplayName="Data Extraction Scope" DocumentObjectModel="[DOM]" DocumentPath="[documentPath]" DocumentText="[documentTXT]" ExtractionResult="[ExtractedResults]" FormatValuesIfPossible="True" sap:VirtualizedContainerService.HintSize="478,482" sap2010:WorkflowViewState.IdRef="DataExtractionScope_1" Taxonomy="[taxanomie_output]" TaxonomyConfiguration="{}{&quot;TaxonomyMappings&quot;:{&quot;UIf118e4b7233f4f60aaee85c2d2ab5383&quot;:{&quot;DocumentTypeMappings&quot;:{&quot;FormatsPDF.T4.T4&quot;:{&quot;FieldMappings&quot;:{&quot;FormatsPDF.T4.T4.14&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;FormatsPDF.T4.T4.14&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;FormatsPDF.T4.T4.12&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;FormatsPDF.T4.T4.12&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;FormatsPDF.T4.T4.client&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;FormatsPDF.T4.T4.client&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;FormatsPDF.T4.T4.addresse&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;FormatsPDF.T4.T4.addresse&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true}},&quot;ExtractorDocumentTypeId&quot;:null},&quot;FormatsPDF.ADC.Avisdecotisation&quot;:{&quot;FieldMappings&quot;:{&quot;FormatsPDF.ADC.Avisdecotisation.Type&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;FormatsPDF.ADC.Avisdecotisation.Type&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;FormatsPDF.ADC.Avisdecotisation.NAS&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;FormatsPDF.ADC.Avisdecotisation.NAS&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;FormatsPDF.ADC.Avisdecotisation.Nom&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;FormatsPDF.ADC.Avisdecotisation.Nom&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;FormatsPDF.ADC.Avisdecotisation.Adress&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;FormatsPDF.ADC.Avisdecotisation.Adress&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;FormatsPDF.ADC.Avisdecotisation.Revenu&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;FormatsPDF.ADC.Avisdecotisation.Revenu&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;FormatsPDF.ADC.Avisdecotisation.date&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;FormatsPDF.ADC.Avisdecotisation.date&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true}},&quot;ExtractorDocumentTypeId&quot;:null}}}},&quot;ExtractorMinimumConfidence&quot;:{&quot;UIf118e4b7233f4f60aaee85c2d2ab5383&quot;:&quot;50&quot;},&quot;ExtractorsAliases&quot;:{},&quot;DocumentTypeOptionsByExtractor&quot;:{&quot;UIf118e4b7233f4f60aaee85c2d2ab5383&quot;:[]}}">
+      <p4:DataExtractionScope.Extractors>
+        <p4:FormExtractor SerializedSignatureFields="{x:Null}" ApiKey="hlJhctnPq2JJnu0jDX6oQq+rS1eQviqv2dRy7PSgn++2YXSJkQS7HOb8xQiYwdqEs0jCXlC2ExpVBcLYdExetA==" DisplayName="Form Extractor" Endpoint="https://du.uipath.com/svc/formextractor" sap:VirtualizedContainerService.HintSize="234,161" sap2010:WorkflowViewState.IdRef="FormExtractor_1" MinOverlapPercentage="65" PersistenceId="UIf118e4b7233f4f60aaee85c2d2ab5383" SerializedSettings="{}{}" SerializedTemplates="[{&quot;DocumentTypeId&quot;:&quot;FormatsPDF.ADC.Avisdecotisation&quot;,&quot;FormId&quot;:&quot;1f2e7c4e&quot;,&quot;FormName&quot;:&quot;ADC&quot;,&quot;OriginalFileExtension&quot;:&quot;pdf&quot;,&quot;Pages&quot;:[{&quot;Page&quot;:0,&quot;Size&quot;:[0.0,0.0,612.0,792.0],&quot;SkewAngle&quot;:0.0,&quot;Evidence&quot;:[{&quot;Text&quot;:&quot;Nous&quot;,&quot;Box&quot;:[306.29,50.4,23.34,11.56]},{&quot;Text&quot;:&quot;avons&quot;,&quot;Box&quot;:[306.29,76.52,26.68,11.56]},{&quot;Text&quot;:&quot;traité&quot;,&quot;Box&quot;:[306.29,105.98,22.23,11.56]},{&quot;Text&quot;:&quot;votre&quot;,&quot;Box&quot;:[306.29,130.99,22.23,11.56]},{&quot;Text&quot;:&quot;déclaration&quot;,&quot;Box&quot;:[306.29,156.0,48.91,11.56]},{&quot;Text&quot;:&quot;de&quot;,&quot;Box&quot;:[306.29,207.69,11.12,11.56]},{&quot;Text&quot;:&quot;revenus&quot;,&quot;Box&quot;:[306.29,221.59,35.57,11.56]},{&quot;Text&quot;:&quot;et&quot;,&quot;Box&quot;:[306.29,259.94,8.34,11.56]},{&quot;Text&quot;:&quot;de&quot;,&quot;Box&quot;:[306.29,271.06,11.12,11.56]},{&quot;Text&quot;:&quot;prestations&quot;,&quot;Box&quot;:[306.29,284.96,48.91,11.56]},{&quot;Text&quot;:&quot;de&quot;,&quot;Box&quot;:[306.29,336.65,11.12,11.56]},{&quot;Text&quot;:&quot;2020&quot;,&quot;Box&quot;:[306.29,350.55,22.24,11.56]},{&quot;Text&quot;:&quot;et&quot;,&quot;Box&quot;:[306.29,375.57,8.34,11.56]},{&quot;Text&quot;:&quot;calculé&quot;,&quot;Box&quot;:[306.29,386.69,31.12,11.56]},{&quot;Text&quot;:&quot;votre&quot;,&quot;Box&quot;:[306.29,420.59,22.23,11.56]},{&quot;Text&quot;:&quot;solde.&quot;,&quot;Box&quot;:[306.29,445.6,26.68,11.56]},{&quot;Text&quot;:&quot;Vous&quot;,&quot;Box&quot;:[329.09,50.4,22.79,11.56]},{&quot;Text&quot;:&quot;avez&quot;,&quot;Box&quot;:[329.09,75.97,21.12,11.56]},{&quot;Text&quot;:&quot;droit&quot;,&quot;Box&quot;:[329.09,99.87,19.45,11.56]},{&quot;Text&quot;:&quot;à&quot;,&quot;Box&quot;:[329.09,122.1,5.56,11.56]},{&quot;Text&quot;:&quot;un&quot;,&quot;Box&quot;:[329.09,130.44,11.12,11.56]},{&quot;Text&quot;:&quot;remboursement&quot;,&quot;Box&quot;:[329.09,144.34,70.02,11.56]}],&quot;Fields&quot;:[{&quot;Field&quot;:&quot;FormatsPDF.ADC.Avisdecotisation.Type&quot;,&quot;Box&quot;:[301.9198,46.6122,418.9799,19.5983]},{&quot;Field&quot;:&quot;FormatsPDF.ADC.Avisdecotisation.NAS&quot;,&quot;Box&quot;:[84.2197,453.4094,68.3292,14.3015]},{&quot;Field&quot;:&quot;FormatsPDF.ADC.Avisdecotisation.Nom&quot;,&quot;Box&quot;:[139.3068,45.0231,87.9275,13.2421]},{&quot;Field&quot;:&quot;FormatsPDF.ADC.Avisdecotisation.Adress&quot;,&quot;Box&quot;:[155.1974,48.2012,132.421,22.7764]},{&quot;Field&quot;:&quot;FormatsPDF.ADC.Avisdecotisation.date&quot;,&quot;Box&quot;:[125.0054,450.7609,64.0917,13.7718]}],&quot;Tables&quot;:[]},{&quot;Page&quot;:1,&quot;Size&quot;:[0.0,0.0,612.0,792.0],&quot;SkewAngle&quot;:0.0,&quot;Evidence&quot;:[{&quot;Text&quot;:&quot;Nous&quot;,&quot;Box&quot;:[206.93,64.8,23.34,11.56]},{&quot;Text&quot;:&quot;avons&quot;,&quot;Box&quot;:[206.93,90.92,26.68,11.56]},{&quot;Text&quot;:&quot;calculé&quot;,&quot;Box&quot;:[206.93,120.38,31.12,11.56]},{&quot;Text&quot;:&quot;vos&quot;,&quot;Box&quot;:[206.93,154.28,15.56,11.56]},{&quot;Text&quot;:&quot;impôts&quot;,&quot;Box&quot;:[206.93,172.62,29.45,11.56]},{&quot;Text&quot;:&quot;à&quot;,&quot;Box&quot;:[206.93,204.85,5.56,11.56]},{&quot;Text&quot;:&quot;l'aide&quot;,&quot;Box&quot;:[206.93,213.19,23.03,11.56]},{&quot;Text&quot;:&quot;des&quot;,&quot;Box&quot;:[206.93,239.0,16.12,11.56]},{&quot;Text&quot;:&quot;montants&quot;,&quot;Box&quot;:[206.93,257.9,41.13,11.56]},{&quot;Text&quot;:&quot;ci-dessous.&quot;,&quot;Box&quot;:[206.93,301.81,50.57,11.56]},{&quot;Text&quot;:&quot;Le&quot;,&quot;Box&quot;:[206.93,355.16,11.12,11.56]},{&quot;Text&quot;:&quot;sommaire&quot;,&quot;Box&quot;:[206.93,369.06,43.89,11.56]},{&quot;Text&quot;:&quot;ci-dessous&quot;,&quot;Box&quot;:[206.93,415.73,47.79,11.56]},{&quot;Text&quot;:&quot;est&quot;,&quot;Box&quot;:[206.93,466.3,13.34,11.56]},{&quot;Text&quot;:&quot;basé&quot;,&quot;Box&quot;:[206.93,482.42,21.68,11.56]},{&quot;Text&quot;:&quot;sur&quot;,&quot;Box&quot;:[206.93,506.88,13.89,11.56]},{&quot;Text&quot;:&quot;les&quot;,&quot;Box&quot;:[206.93,523.55,12.78,11.56]},{&quot;Text&quot;:&quot;renseignements&quot;,&quot;Box&quot;:[218.21,64.8,71.14,11.56]},{&quot;Text&quot;:&quot;que&quot;,&quot;Box&quot;:[218.21,138.72,16.68,11.56]},{&quot;Text&quot;:&quot;nous&quot;,&quot;Box&quot;:[218.21,158.18,21.68,11.56]},{&quot;Text&quot;:&quot;avons&quot;,&quot;Box&quot;:[218.21,182.64,26.68,11.56]},{&quot;Text&quot;:&quot;ou&quot;,&quot;Box&quot;:[218.21,212.1,11.12,11.56]},{&quot;Text&quot;:&quot;que&quot;,&quot;Box&quot;:[218.21,226.0,16.68,11.56]},{&quot;Text&quot;:&quot;vous&quot;,&quot;Box&quot;:[218.21,245.46,21.12,11.56]},{&quot;Text&quot;:&quot;nous&quot;,&quot;Box&quot;:[218.21,269.36,21.68,11.56]},{&quot;Text&quot;:&quot;avez&quot;,&quot;Box&quot;:[218.21,293.82,21.12,11.56]},{&quot;Text&quot;:&quot;donnés.&quot;,&quot;Box&quot;:[218.21,317.72,35.58,11.56]}],&quot;Fields&quot;:[{&quot;Field&quot;:&quot;FormatsPDF.ADC.Avisdecotisation.Revenu&quot;,&quot;Box&quot;:[348.532,468.2405,42.9044,10.5937]}],&quot;Tables&quot;:[]},{&quot;Page&quot;:2,&quot;Size&quot;:[0.0,0.0,612.0,792.0],&quot;SkewAngle&quot;:0.0,&quot;Evidence&quot;:[{&quot;Text&quot;:&quot;Les&quot;,&quot;Box&quot;:[212.69,75.84,16.12,11.56]},{&quot;Text&quot;:&quot;références&quot;,&quot;Box&quot;:[212.69,94.74,47.24,11.56]},{&quot;Text&quot;:&quot;aux&quot;,&quot;Box&quot;:[212.69,144.76,16.12,11.56]},{&quot;Text&quot;:&quot;cotisations&quot;,&quot;Box&quot;:[212.69,163.66,47.24,11.56]},{&quot;Text&quot;:&quot;versées&quot;,&quot;Box&quot;:[212.69,213.68,35.01,11.56]},{&quot;Text&quot;:&quot;à&quot;,&quot;Box&quot;:[212.69,251.47,5.56,11.56]},{&quot;Text&quot;:&quot;un&quot;,&quot;Box&quot;:[212.69,259.81,11.12,11.56]},{&quot;Text&quot;:&quot;REER&quot;,&quot;Box&quot;:[212.69,273.71,27.78,11.56]},{&quot;Text&quot;:&quot;comprennent&quot;,&quot;Box&quot;:[212.69,304.27,58.36,11.56]},{&quot;Text&quot;:&quot;également&quot;,&quot;Box&quot;:[212.69,365.41,46.69,11.56]},{&quot;Text&quot;:&quot;les&quot;,&quot;Box&quot;:[212.69,414.88,12.78,11.56]},{&quot;Text&quot;:&quot;cotisations&quot;,&quot;Box&quot;:[212.69,430.44,47.24,11.56]},{&quot;Text&quot;:&quot;versées&quot;,&quot;Box&quot;:[212.69,480.46,35.01,11.56]},{&quot;Text&quot;:&quot;à&quot;,&quot;Box&quot;:[212.69,518.25,5.56,11.56]},{&quot;Text&quot;:&quot;votre&quot;,&quot;Box&quot;:[223.49,75.84,22.23,11.56]},{&quot;Text&quot;:&quot;régime&quot;,&quot;Box&quot;:[223.49,100.85,30.56,11.56]},{&quot;Text&quot;:&quot;de&quot;,&quot;Box&quot;:[223.49,134.19,11.12,11.56]}],&quot;Fields&quot;:[],&quot;Tables&quot;:[]},{&quot;Page&quot;:3,&quot;Size&quot;:[0.0,0.0,612.0,792.0],&quot;SkewAngle&quot;:0.0,&quot;Evidence&quot;:[{&quot;Text&quot;:&quot;Utilisez&quot;,&quot;Box&quot;:[115.73,378.0,32.12,11.56]},{&quot;Text&quot;:&quot;le&quot;,&quot;Box&quot;:[115.73,413.04,7.72,11.56]},{&quot;Text&quot;:&quot;service&quot;,&quot;Box&quot;:[115.73,423.6,31.72,11.56]},{&quot;Text&quot;:&quot;Mon&quot;,&quot;Box&quot;:[115.73,457.92,19.48,11.56]},{&quot;Text&quot;:&quot;dossier&quot;,&quot;Box&quot;:[115.73,480.24,32.13,11.56]},{&quot;Text&quot;:&quot;pour&quot;,&quot;Box&quot;:[115.73,515.28,19.89,11.56]},{&quot;Text&quot;:&quot;consulter&quot;,&quot;Box&quot;:[126.77,378.0,40.53,11.56]},{&quot;Text&quot;:&quot;et&quot;,&quot;Box&quot;:[126.77,421.44,8.3,11.56]},{&quot;Text&quot;:&quot;gérer&quot;,&quot;Box&quot;:[126.77,432.48,23.25,11.56]},{&quot;Text&quot;:&quot;votre&quot;,&quot;Box&quot;:[126.77,458.64,22.12,11.56]},{&quot;Text&quot;:&quot;dossier&quot;,&quot;Box&quot;:[126.77,483.6,32.13,11.56]},{&quot;Text&quot;:&quot;fiscal&quot;,&quot;Box&quot;:[137.57,378.0,22.86,11.56]},{&quot;Text&quot;:&quot;en&quot;,&quot;Box&quot;:[137.57,403.68,11.08,11.56]},{&quot;Text&quot;:&quot;ligne.&quot;,&quot;Box&quot;:[137.57,417.36,23.9,11.56]}],&quot;Fields&quot;:[],&quot;Tables&quot;:[]}],&quot;AnchorBasedConfiguration&quot;:{&quot;AnchorBasedFieldConfiguration&quot;:[]}},{&quot;DocumentTypeId&quot;:&quot;FormatsPDF.T4.T4&quot;,&quot;FormId&quot;:&quot;18550155&quot;,&quot;FormName&quot;:&quot;T4NouvelVersion&quot;,&quot;OriginalFileExtension&quot;:&quot;pdf&quot;,&quot;Pages&quot;:[{&quot;Page&quot;:0,&quot;Size&quot;:[0.0,0.0,612.0,792.0],&quot;SkewAngle&quot;:0.0,&quot;Evidence&quot;:[{&quot;Text&quot;:&quot;Employment&quot;,&quot;Box&quot;:[59.382,346.248,33.342,6.936]},{&quot;Text&quot;:&quot;income&quot;,&quot;Box&quot;:[59.382,381.258,19.338,6.936]},{&quot;Text&quot;:&quot;-&quot;,&quot;Box&quot;:[59.382,402.264,3.336,6.936]},{&quot;Text&quot;:&quot;line&quot;,&quot;Box&quot;:[59.382,407.268,9.336,6.936]},{&quot;Text&quot;:&quot;10100&quot;,&quot;Box&quot;:[59.382,418.272,16.68,6.936]},{&quot;Text&quot;:&quot;Revenus&quot;,&quot;Box&quot;:[67.062,348.006,23.676,6.936]},{&quot;Text&quot;:&quot;d'emploi&quot;,&quot;Box&quot;:[67.062,373.35,22.152,6.936]},{&quot;Text&quot;:&quot;-&quot;,&quot;Box&quot;:[67.062,397.17,3.336,6.936]},{&quot;Text&quot;:&quot;ligne&quot;,&quot;Box&quot;:[67.062,402.174,12.672,6.936]},{&quot;Text&quot;:&quot;10100&quot;,&quot;Box&quot;:[67.062,416.514,16.68,6.936]}],&quot;Fields&quot;:[{&quot;Field&quot;:&quot;FormatsPDF.T4.T4.14&quot;,&quot;Box&quot;:[77.3338,352.2397,68.8589,13.2421]},{&quot;Field&quot;:&quot;FormatsPDF.T4.T4.12&quot;,&quot;Box&quot;:[139.3068,67.2698,110.7039,14.3015]},{&quot;Field&quot;:&quot;FormatsPDF.T4.T4.client&quot;,&quot;Box&quot;:[198.6314,58.7949,88.4572,16.9499]},{&quot;Field&quot;:&quot;FormatsPDF.T4.T4.addresse&quot;,&quot;Box&quot;:[218.7594,74.1557,237.2984,80.5119]}],&quot;Tables&quot;:[]},{&quot;Page&quot;:1,&quot;Size&quot;:[0.0,0.0,612.0,792.0],&quot;SkewAngle&quot;:0.0,&quot;Evidence&quot;:[{&quot;Text&quot;:&quot;la&quot;,&quot;Box&quot;:[763.6937,274.6679,4.668,6.936]},{&quot;Text&quot;:&quot;protection&quot;,&quot;Box&quot;:[763.6937,281.0039,26.346,6.936]},{&quot;Text&quot;:&quot;des&quot;,&quot;Box&quot;:[763.6937,309.0179,9.672,6.936]},{&quot;Text&quot;:&quot;renseignements&quot;,&quot;Box&quot;:[763.6937,320.3579,42.684,6.936]},{&quot;Text&quot;:&quot;personnels,&quot;,&quot;Box&quot;:[763.6937,364.7099,31.014,6.936]},{&quot;Text&quot;:&quot;fichiers&quot;,&quot;Box&quot;:[763.6937,397.3919,19.002,6.936]},{&quot;Text&quot;:&quot;de&quot;,&quot;Box&quot;:[763.6937,418.0619,6.672,6.936]},{&quot;Text&quot;:&quot;renseignements&quot;,&quot;Box&quot;:[763.6937,426.4019,42.684,6.936]},{&quot;Text&quot;:&quot;personnels&quot;,&quot;Box&quot;:[763.6937,470.7539,29.346,6.936]}],&quot;Fields&quot;:[],&quot;Tables&quot;:[]}],&quot;AnchorBasedConfiguration&quot;:{&quot;AnchorBasedFieldConfiguration&quot;:[]}}]" Timeout="100000">
+          <p4:FormExtractor.DocumentBounds>
+            <InArgument x:TypeArguments="p6:ResultsDocumentBounds">
+              <DelegateArgumentValue x:TypeArguments="p6:ResultsDocumentBounds">
+                <DelegateInArgument x:TypeArguments="p6:ResultsDocumentBounds" Name="DocumentBounds" />
+              </DelegateArgumentValue>
+            </InArgument>
+          </p4:FormExtractor.DocumentBounds>
+          <p4:FormExtractor.DocumentObjectModel>
+            <InArgument x:TypeArguments="p3:Document">
+              <DelegateArgumentValue x:TypeArguments="p3:Document">
+                <DelegateInArgument x:TypeArguments="p3:Document" Name="DocumentObjectModel" />
+              </DelegateArgumentValue>
+            </InArgument>
+          </p4:FormExtractor.DocumentObjectModel>
+          <p4:FormExtractor.DocumentPath>
+            <InArgument x:TypeArguments="x:String">
+              <DelegateArgumentValue x:TypeArguments="x:String">
+                <DelegateInArgument x:TypeArguments="x:String" Name="DocumentPath" />
+              </DelegateArgumentValue>
+            </InArgument>
+          </p4:FormExtractor.DocumentPath>
+          <p4:FormExtractor.DocumentText>
+            <InArgument x:TypeArguments="x:String">
+              <DelegateArgumentValue x:TypeArguments="x:String">
+                <DelegateInArgument x:TypeArguments="x:String" Name="DocumentText" />
+              </DelegateArgumentValue>
+            </InArgument>
+          </p4:FormExtractor.DocumentText>
+          <p4:FormExtractor.ExtractorDocumentType>
+            <InArgument x:TypeArguments="p5:ExtractorDocumentType">
+              <DelegateArgumentValue x:TypeArguments="p5:ExtractorDocumentType">
+                <DelegateInArgument x:TypeArguments="p5:ExtractorDocumentType" Name="ExtractorDocumentType" />
+              </DelegateArgumentValue>
+            </InArgument>
+          </p4:FormExtractor.ExtractorDocumentType>
+          <p4:FormExtractor.ExtractorResult>
+            <OutArgument x:TypeArguments="p5:ExtractorResult">
+              <DelegateArgumentReference x:TypeArguments="p5:ExtractorResult">
+                <DelegateOutArgument x:TypeArguments="p5:ExtractorResult" Name="ExtractorResult" />
+              </DelegateArgumentReference>
+            </OutArgument>
+          </p4:FormExtractor.ExtractorResult>
+        </p4:FormExtractor>
+      </p4:DataExtractionScope.Extractors>
+    </p4:DataExtractionScope>
+    <p:PresentValidationStation AutomaticExtractionResults="[ExtractedResults]" DisplayName="Present Validation Station" DocumentObjectModel="[DOM]" DocumentPath="[documentPath]" DocumentText="[documentTXT]" sap:VirtualizedContainerService.HintSize="478,365" sap2010:WorkflowViewState.IdRef="PresentValidationStation_1" ShowOnlyRelevantPageRange="False" Taxonomy="[taxanomie_output]" ValidatedExtractionResults="[ValidatedResults]" />
+  </Sequence>
+</Activity>
