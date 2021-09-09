@@ -3,15 +3,18 @@
   "description": "Automatisation assistée basée sur déclencheur",
   "main": "Main.xaml",
   "dependencies": {
+    "System.Text.Json": "[5.0.1]",
     "UiPath.DocumentUnderstanding.ML.Activities": "[1.7.0]",
     "UiPath.Excel.Activities": "[2.10.4]",
     "UiPath.IntelligentOCR.Activities": "[4.14.2-preview]",
     "UiPath.Mail.Activities": "[1.10.5]",
     "UiPath.MicrosoftOffice365.Activities": "[1.6.0]",
     "UiPath.OmniPage.Activities": "[1.7.1]",
+    "UiPath.PDF.Activities": "[3.4.0]",
     "UiPath.System.Activities": "[21.4.1]",
     "UiPath.UIAutomation.Activities": "[21.4.4]",
-    "UiPath.WebAPI.Activities": "[1.7.0]"
+    "UiPath.WebAPI.Activities": "[1.4.4]",
+    "UiPathTeam.JsonDataConverter.Activities": "[1.1.0]"
   },
   "webServices": [],
   "entitiesStores": [],
