@@ -92,8 +92,8 @@
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="d3dbfdaa-d9b1-4f08-825a-8e37e7a9eba9" Name="appID" />
       <Variable x:TypeArguments="x:String" Default="f4b87f1c-7356-4935-b1fc-94954329fa35" Name="tenantID" />
-      <Variable x:TypeArguments="x:String" Default="chouk.oussama@outlook.com" Name="userID" />
-      <Variable x:TypeArguments="x:String" Default="68ss2m244M3N" Name="userPWD" />
+      <Variable x:TypeArguments="x:String" Default="********" Name="userID" />
+      <Variable x:TypeArguments="x:String" Default="********" Name="userPWD" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
